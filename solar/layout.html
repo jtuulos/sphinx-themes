@@ -4,6 +4,21 @@
 <!DOCTYPE html>
 {%- endblock -%}
 
+{%- block relbar1 %}
+  <div class="related">
+    <ul>
+      {%- block rootrellink %}
+      <li><a href="/" class="logo" title="Bitdeli Home">Bitdeli Home</a>{{ reldelim1 }}<li>
+      <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+      {%- endblock %}
+      {%- for parent in parents %}
+        <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+      {%- endfor %}
+      {%- block relbaritems %} {% endblock %}
+    </ul>
+  </div>
+{%- endblock %}
+
 {# put the sidebar before the body #}
 {% block sidebar1 %}{{ sidebar() }}{% endblock %}
 {% block sidebar2 %}{% endblock %}

@@ -64,7 +64,7 @@ body {
     line-height: 22px;
     text-align: center;
     color: #333;
-    padding: 47px 0 0;
+    padding: 0;
     margin: 0 auto 80px;
     min-width: 740px;
     max-width: 1170px;
@@ -104,8 +104,20 @@ div.related {
     z-index: 200;
 }
 
+div.related a.logo {
+    display: inline-block;
+    height: 27px;
+    width: 65px;
+    text-indent: -9999em;
+    background-image: url("https://beta.bitdeli.com/assets/img/bitdeli_header_logo_white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 65px;
+    padding: 0 10px;
+}
+
 div.related ul {
-    height: 2em;
+    height: 30px;
     margin: 2px;
     padding: 0 0 0 15px;
 }
@@ -113,7 +125,6 @@ div.related ul {
 div.related ul li {
     margin: 0;
     padding: 0;
-    height: 2em;
     float: left;
 }
 
@@ -125,7 +136,7 @@ div.related ul li.right {
 div.related ul li a {
     margin: 0;
     padding: 2px 5px;
-    line-height: 2em;
+    line-height: 30px;
     text-decoration: none;
     color: #BBA7AF;
 }

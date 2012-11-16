@@ -4,10 +4,62 @@
 
 @import url("basic.css");
 
-/* -- page layout ----------------------------------------------------------- */
+/* -- local fonts ----------------------------------------------------------- */
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans-Regular.eot");
+    src: url("font/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+         url("font/OpenSans-Regular.woff") format("woff"),
+         url("font/OpenSans-Regular.ttf") format("truetype"),
+         url("font/OpenSans-Regular.svg#OpenSansRegular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans-Bold.eot");
+    src: url("font/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+         url("font/OpenSans-Bold.woff") format("woff"),
+         url("font/OpenSans-Bold.ttf") format("truetype"),
+         url("font/OpenSans-Bold.svg#OpenSansBold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans-Italic.eot");
+    src: url("font/OpenSans-Italic.eot?#iefix") format("embedded-opentype"),
+         url("font/OpenSans-Italic.woff") format("woff"),
+         url("font/OpenSans-Italic.ttf") format("truetype"),
+         url("font/OpenSans-Italic.svg#OpenSansItalic") format("svg");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans-Light.eot");
+    src: url("font/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+         url("font/OpenSans-Light.woff") format("woff"),
+         url("font/OpenSans-Light.ttf") format("truetype"),
+         url("font/OpenSans-Light.svg#OpenSansLight") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inconsolata";
+    src: url("font/Inconsolata-webfont.eot");
+    src: url("font/Inconsolata-webfont.eot?#iefix") format("embedded-opentype"),
+         url("font/Inconsolata-webfont.woff") format("woff"),
+         url("font/Inconsolata-webfont.ttf") format("truetype"),
+         url("font/Inconsolata-webfont.svg#InconsolataMedium") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
 
+
+/* -- page layout ----------------------------------------------------------- */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
@@ -224,8 +276,11 @@ a.headerlink:hover {
 }
 
 
+pre, cite, code, tt {
+    font-family: Monaco, Menlo, Consolas, "Ubuntu Mono", "Droid Sans Mono", Inconsolata, "Courier New", monospace;
+}
+
 cite, code, tt {
-    font-family: 'Source Code Pro', monospace;
 	font-size: 0.9em;
     letter-spacing: 0.01em;
     background-color: #eeeff2;
@@ -244,7 +299,6 @@ hr {
 }
 
 pre {
-    font-family: 'Source Code Pro', monospace;
     font-style: normal;
 	font-size: 0.9em;
     letter-spacing: 0.015em;

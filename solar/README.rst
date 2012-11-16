@@ -21,6 +21,10 @@ License
 -------
 `GNU General Public License <http://www.gnu.org/licenses/gpl.html>`_.
 
+Open Sans typeface: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0.html>`_.
+
+Inconsolata typeface: `SIL Open Font License <http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=OFL&_sc=1>`_.
+
 Credits
 -------
 Modified from the default Sphinx theme -- Sphinxdoc
